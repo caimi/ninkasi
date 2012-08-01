@@ -1,12 +1,13 @@
 <html>
 <head>
-	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>	
 <body>
 	
 <div id="wrap_login">
 	<div class="body">
-		<?php echo form_open('verify_login'); ?>
+		<?php echo validation_errors(); ?>
+		<?php echo form_open('authenticate'); ?>
 			<label for="username"><?php echo lang('username')?></label><br>
 			<input type="text" name="username"><br>
 			<label for="password"><?php echo lang('password')?></label><br>
