@@ -24,6 +24,6 @@ $lang['decimal']			= "O campo %s deve conter um número decimal.";
 $lang['less_than']			= "O campo %s deve conter um número menor que %s.";
 $lang['greater_than']		= "O campo %s deve conter um número maior que %s.";
 
-
+$lang['verify_login'] = "login ou senha é invalido. Por favor, tente novamente."; 
 /* End of file form_validation_lang.php */
 /* Location: ./system/language/english/form_validation_lang.php */

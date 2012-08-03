@@ -6,5 +6,5 @@
 	$lang['lostYourPassword'] = "lost your password?"; 
 	$lang['dontHaveAnAccount'] = "don't have an account?"; 
 	$lang['signUp'] = "Sign up!"; 
-	
+
 ?>
