@@ -15,7 +15,7 @@
 			<input type ="submit" value="<?php echo lang('sendLogin')?>">
 			<input type="checkbox" name=""><span><?php echo lang('rememberMe')?></span><br>
 			<a href=""><?php echo lang('lostYourPassword')?></a><br>
-			<span><?php echo lang('dontHaveAnAccount')?></span> <a href=""><?php echo lang('signUp')?></a>
+			<span><?php echo lang('dontHaveAnAccount')?></span> <a href="registration"><?php echo lang('signUp')?></a>
 		</form>
 	</div>
 </div>
