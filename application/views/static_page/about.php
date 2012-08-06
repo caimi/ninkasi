@@ -7,7 +7,7 @@
 	
 <div id="wrap_about">
 	<div class="body">
-		Fazer cerveja ficou muito mais divertido.
+		voce ainda nao ativou sua conta
 	</div>
 </div>
 </body>

@@ -13,8 +13,7 @@ class Membership extends CI_Controller {
 	
 	public function verify_login($password){
 		$username = $this->input->post('username');
-		$result = $this->user->login($username, $password);
-		
+		$result = $this->user->login($username, do_hash($password));
 		if($result != NULL){
 			$sess_array = array();
 			foreach($result as $row){
@@ -40,9 +39,12 @@ class Membership extends CI_Controller {
 		} else{
 			$username = $this -> input -> post('username');
 			$password = $this -> input -> post('password');
-			
 			if($this->verify_login($username, $password)){
-				redirect('welcome', 'refresh');
+				if($this->user->userActivated($username)){
+					redirect('welcome', 'refresh');
+				} else {
+					redirect('pages/view/about', 'refresh');
+				}
 			}else{
 				$this->form_validation->set_message('verify_login', lang('verify_login'));
 				$data = array(
@@ -77,15 +79,12 @@ class Membership extends CI_Controller {
 				'lastname'=>$this -> input -> post('lastName'),
 				'email'=>$this -> input -> post('email')
 			);
-			$this->load->helper('security');
 			$this->db->trans_start();
-				$this->user->createPerson($person);
-				$result = $this->user->getPerson($person);
-				echo 'o id da pessoa é:'.$this -> input -> post($result->id);
+				$id_person = $this->user->createPerson($person);
 				$user = array(
 					'username' => $this -> input -> post('username'),
 					'password' => do_hash($this -> input -> post('password')),
-					'id_person' => $this -> input -> post($result->id)
+					'id_person' => $id_person
 				);
 				$this->user->createUser($user);
 			$this->db->trans_complete(); 

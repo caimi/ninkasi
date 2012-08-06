@@ -84,7 +84,7 @@
 		 $item = $this->session->userdata('username'); 
 		 echo $item;
 		 ?>
-		 <a href="authenticate/close">Logout</a>
+		 <a href="membership/close">Logout</a>
 
 	</div>
 
