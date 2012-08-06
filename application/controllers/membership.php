@@ -45,18 +45,51 @@ class Membership extends CI_Controller {
 				redirect('welcome', 'refresh');
 			}else{
 				$this->form_validation->set_message('verify_login', lang('verify_login'));
-				$this->load->view('login_view');
+				$data = array(
+					'username'=>$username
+				);
+				$this->load->view('login_view', $data);
 			};
 		}
 	}
 	
-	public function sighUp(){
+	public function signUp(){
+		$this->form_validation->set_rules('surname', 'lang:surname','trim|required');
+		$this->form_validation->set_rules('lastName', 'lang:lastName','trim|required');
+		$this->form_validation->set_rules('email', 'lang:email','trim|required|valid_email');
+		$this->form_validation->set_rules('emailConfirmation', 'lang:emailConfirmation','trim|required|valid_email');
 		$this->form_validation->set_rules('username', 'lang:username','trim|required');
 		$this->form_validation->set_rules('password', 'lang:password','trim|required');
+		$this->form_validation->set_rules('passwordConfirmation', 'lang:passwordConfirmation','trim|required');
 		
 		if($this->form_validation->run()==FALSE){
-			$this->load->view('registration_view');
+			$data = array(
+				'surname'=> $this -> input -> post('surname'),
+				'lastname'=>$this -> input -> post('lastName'),
+				'email'=>$this -> input -> post('email'),
+				'emailConfirmation'=>$this -> input -> post('emailConfirmation'),
+				'username'=>$this -> input -> post('username')
+			);
+			$this->load->view('registration_view', $data);
 		} else{
+			$person = array(
+				'surname'=> $this -> input -> post('surname'),
+				'lastname'=>$this -> input -> post('lastName'),
+				'email'=>$this -> input -> post('email')
+			);
+			$this->load->helper('security');
+			$this->db->trans_start();
+				$this->user->createPerson($person);
+				$result = $this->user->getPerson($person);
+				echo 'o id da pessoa é:'.$this -> input -> post($result->id);
+				$user = array(
+					'username' => $this -> input -> post('username'),
+					'password' => do_hash($this -> input -> post('password')),
+					'id_person' => $this -> input -> post($result->id)
+				);
+				$this->user->createUser($user);
+			$this->db->trans_complete(); 
+			
 			redirect('welcome', 'refresh');
 		}
 	}
@@ -67,4 +100,6 @@ class Membership extends CI_Controller {
 		$this->session->unset_userdata('username');
 		redirect('login', 'refresh');
 	}
+
+	
 }

@@ -10,7 +10,7 @@
 
 	/*registration*/
 	$lang['surname'] = "nome"; 
-	$lang['lastName'] = "Sobrenome"; 
+	$lang['lastName'] = "sobrenome"; 
 	$lang['email'] = "email";
 	$lang['site'] = "site"; 
 	$lang['emailConfirmation'] = "confirmação do email"; 

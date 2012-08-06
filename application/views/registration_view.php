@@ -6,22 +6,34 @@
 	
 <div id="wrap_signUp">
 	<div class="body">
-		<?php echo form_open('Membership/sighUp'); ?>
-			<label for="surname"><?php echo lang('surname')?></label>
-			<input type="text" name="surname"><br>
-			<label for="lastname"><?php echo lang('lastName')?></label>
-			<input type="text" name="lastName"><br>
-			<label for="email"><?php echo lang('email')?></label>
-			<input type="text" name="email"><br>	
-			<label for="emailConfirmation"><?php echo lang('emailConfirmation')?></label>
-			<input type="text" name="emailConfirmation"><br>
-			<label for="username"><?php echo lang('username')?></label>
-			<input type="text" name="username"><br>
-			<label for="password"><?php echo lang('password')?></label>
-			<input type="text" name="password"><br>
-			<label for="passwordConfirmation"><?php echo lang('passwordConfirmation')?></label>
-			<input type="text" name="passwordConfirmation"><br>
-			<input type ="submit" value="<?php echo lang('sendLogin')?>">
+		<div class="validation">
+			<?php echo validation_errors(); ?>
+		</div>
+			
+		<?php echo form_open('Membership/signUp'); ?>
+			<label for="surname"><?php echo lang('surname')?></label><br>
+			<input type="text" name="surname" value="<?php echo $surname?>"><br>
+			
+			<label for="lastname"><?php echo lang('lastName')?></label><br>
+			<input type="text" name="lastName" value="<?php echo $lastname?>"><br>
+			
+			<label for="email"><?php echo lang('email')?></label><br>
+			<input type="text" name="email" value="<?php echo $email?>"><br>	
+			
+			<label for="emailConfirmation"><?php echo lang('emailConfirmation')?></label><br>
+			<input type="text" name="emailConfirmation" value="<?php echo $emailConfirmation?>"><br>
+			
+			<label for="username"><?php echo lang('username')?></label><br>
+			<input type="text" name="username" value="<?php echo $username?>"><br>
+			
+			<label for="password"><?php echo lang('password')?></label><br>
+			<input type="password" name="password"><br>
+			
+			<label for="passwordConfirmation"><?php echo lang('passwordConfirmation')?></label><br>
+			<input type="password" name="passwordConfirmation"><br>
+			
+			<input type ="submit" value="<?php echo lang('sendLogin')?>"><br>
+
 		</form>
 	</div>
 </div>
