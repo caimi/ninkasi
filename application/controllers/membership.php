@@ -95,6 +95,7 @@ class Membership extends CI_Controller {
 					$this -> input -> post('username').
 					$this -> input -> post('email').date("Y-m-d G:i:s").'09051974' );
 				$this->activation->create($id_user, $key);
+				$this->sendActivationMail($person['email'], $key);
 			$this->db->trans_complete(); 
 			
 			redirect('welcome', 'refresh');
@@ -106,6 +107,20 @@ class Membership extends CI_Controller {
 		$this->session->unset_userdata('id');
 		$this->session->unset_userdata('username');
 		redirect('login', 'refresh');
+	}
+
+	public function sendActivationMail($email, $key){
+		$this->load->library('email');
+
+		$this->email->from('nao-responda@ninkasi.com', 'Your Name');
+		$this->email->to($email); 
+		
+		$this->email->subject('Ativação pendente');
+		$this->email->message('Bem vindo. ative sua conta clicando no link abaixo: http:\\\\localhost\\beer\\registration\\confirm\\'.$key);	
+		
+		$this->email->send();
+		
+		echo $this->email->print_debugger();
 	}
 
 	

@@ -2,8 +2,7 @@
 
 class Registration extends CI_Controller {
 
-	public function index()
-	{
+	public function index(){
 		$data = array(
 			'surname'=> '',
 			'lastname'=>'',
@@ -13,6 +12,8 @@ class Registration extends CI_Controller {
 		);
 		$this->load->view('registration_view', $data);
 	}
+	
+	
 }
 
 /* End of file welcome.php */

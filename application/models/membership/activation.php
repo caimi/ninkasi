@@ -7,6 +7,7 @@ Class Activation extends CI_Model {
 			'code' => do_hash($key),
 			'id_user' => $userId,
 			'status'=>'A',
+			'type'=>'A',
 			'creation' => date("Y-m-d G:i:s")
 		);
 		$this->db->insert('activation', $data);
