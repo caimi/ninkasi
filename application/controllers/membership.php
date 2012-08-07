@@ -5,6 +5,7 @@ class Membership extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->model('membership/user','',TRUE);
+		$this->load->model('membership/activation','',TRUE);
 	}
 
 	public function index(){
@@ -77,16 +78,23 @@ class Membership extends CI_Controller {
 			$person = array(
 				'surname'=> $this -> input -> post('surname'),
 				'lastname'=>$this -> input -> post('lastName'),
-				'email'=>$this -> input -> post('email')
+				'email'=>$this -> input -> post('email'),
+				'creation' => date("Y-m-d G:i:s")
 			);
+			
 			$this->db->trans_start();
 				$id_person = $this->user->createPerson($person);
 				$user = array(
 					'username' => $this -> input -> post('username'),
 					'password' => do_hash($this -> input -> post('password')),
-					'id_person' => $id_person
+					'id_person' => $id_person,
+					'creation' => date("Y-m-d G:i:s")
 				);
-				$this->user->createUser($user);
+				$id_user = $this->user->createUser($user);
+				$key=do_hash( 
+					$this -> input -> post('username').
+					$this -> input -> post('email').date("Y-m-d G:i:s").'09051974' );
+				$this->activation->create($id_user, $key);
 			$this->db->trans_complete(); 
 			
 			redirect('welcome', 'refresh');

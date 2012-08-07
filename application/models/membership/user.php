@@ -4,11 +4,13 @@ Class User extends CI_Model {
 	const TABLE_PERSON = 'person';
 	
 	function login($username, $password){
-		$this -> db -> select();
-		$this -> db -> from(self::TABLE_USER);
-		$this -> db -> where('username = ' . "'" . $username . "'");
-		$this -> db -> where('password = ' . "'" . $password . "'");
-		$this -> db -> limit(1);
+			
+		$this->db
+			->select()
+			->from(self::TABLE_USER)
+			->where('username = ' . "'" . $username . "'")
+			->where('password = ' . "'" . $password . "'")
+			-> limit(1);
 		
 		$query = $this -> db -> get();
 		
@@ -20,15 +22,23 @@ Class User extends CI_Model {
 		}
 	}
 	
+	function getUserId($username){
+		$query = $this->db->select('id')->from(self::TABLE_USER)->where('username',$username);
+		return $query->row()->id;
+	}
+	
 	function createPerson($data){
 		$this->db->insert(self::TABLE_PERSON, $data);
 		$id = $this->db->insert_id();
-		log_message('info', 'create id '.$id);
-		return  $id;
+		log_message('info', 'person id '.$id);
+		return $id;
 	}
 	
 	function createUser($data){
 		$this->db->insert(self::TABLE_USER,$data);
+		$id = $this->db->insert_id();
+		log_message('info', 'user id '.$id);
+		return $id;
 	}
 	
 	function getPerson($data){
@@ -44,13 +54,13 @@ Class User extends CI_Model {
 	
 	function activeUser($username){
 		$data = array(
-			$activated => date("Y-m-d G:i:s")
+			'activation' => date("Y-m-d G:i:s")
 		);
 		$this->db->update(self::TABLE_USER, $data, 'username = ' . $username);
 	}
 	
 	function userActivated($username){
-		$this->db->select()->from(self::TABLE_USER)->where('username = ' . "'" . $username . "'")->where('activated is not null', null);
+		$this->db->select()->from(self::TABLE_USER)->where('username = ' . "'" . $username . "'")->where('activation is not null', null);
 		$query = $this -> db -> get();
 		
 		if($query -> num_rows == 1){
