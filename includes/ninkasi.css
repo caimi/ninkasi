@@ -1,0 +1,16 @@
+#wrap_login {
+	background-color: #f1f1f1;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #666666;
+}
+#wrap_login input[type="text"], #wrap_login input[type="password"]  {
+	border: none;
+	width: 100px;
+	background-color: #a1a1a1;
+	color: #333333;
+}
+
+#wrap_login div.error{
+	color: #FF0000;
+}

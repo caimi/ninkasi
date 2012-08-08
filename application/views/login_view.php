@@ -1,12 +1,13 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>includes/ninkasi.css" />
 </head>	
 <body>
 	
 <div id="wrap_login">
 	<div class="body">
-		<?php echo validation_errors(); ?>
+		<div class="error"><?php echo validation_errors(); ?></div>
 		<?php echo form_open('Membership/authenticate'); ?>
 			<label for="username"><?php echo lang('username')?></label><br>
 			<input type="text" name="username"><br>
@@ -19,5 +20,7 @@
 		</form>
 	</div>
 </div>
+
+<img src="<?php echo base_url();?>images/logo.png">
 </body>
 </html>

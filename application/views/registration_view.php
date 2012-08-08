@@ -12,19 +12,19 @@
 			
 		<?php echo form_open('Membership/signUp'); ?>
 			<label for="surname"><?php echo lang('surname')?></label><br>
-			<input type="text" name="surname" value="<?php echo $surname?>"><br>
+			<input type="text" name="surname" value="<?php echo set_value('surname')?>"><br>
 			
 			<label for="lastname"><?php echo lang('lastName')?></label><br>
-			<input type="text" name="lastName" value="<?php echo $lastname?>"><br>
+			<input type="text" name="lastName" value="<?php echo set_value('lastName')?>"><br>
 			
 			<label for="email"><?php echo lang('email')?></label><br>
-			<input type="text" name="email" value="<?php echo $email?>"><br>	
+			<input type="text" name="email" value="<?php echo set_value('email')?>"><br>
 			
 			<label for="emailConfirmation"><?php echo lang('emailConfirmation')?></label><br>
-			<input type="text" name="emailConfirmation" value="<?php echo $emailConfirmation?>"><br>
+			<input type="text" name="emailConfirmation" value="<?php echo set_value('emailConfirmation')?>"><br>
 			
 			<label for="username"><?php echo lang('username')?></label><br>
-			<input type="text" name="username" value="<?php echo $username?>"><br>
+			<input type="text" name="username" value="<?php echo set_value('username')?>"><br>
 			
 			<label for="password"><?php echo lang('password')?></label><br>
 			<input type="password" name="password"><br>

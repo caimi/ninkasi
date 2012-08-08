@@ -17,7 +17,7 @@ $lang['email_failed_smtp_login'] = "Falha ao enviar o comando AUTH LOGIN. Erro: 
 $lang['email_smtp_auth_un'] = "Falha ao autenticar o usuário. Erro: %s";
 $lang['email_smtp_auth_pw'] = "Falha ao autenticar a senha. Erro: %s";
 $lang['email_smtp_data_failure'] = "Impossível enviar os dados: %s";
-$lang['email_exit_status'] = "Códigfo do status de saída (Exit status code): %s";
+$lang['email_exit_status'] = "Código do status de saída (Exit status code): %s";
 
 
 /* End of file email_lang.php */

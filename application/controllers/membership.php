@@ -32,10 +32,7 @@ class Membership extends CI_Controller {
 	
 	public function authenticate()
 	{
-		$this->form_validation->set_rules('username', 'lang:username','trim|required');
-		$this->form_validation->set_rules('password', 'lang:password','trim|required|callback_verify_login');
-		
-		if($this->form_validation->run()==FALSE){
+		if($this->form_validation->run('login')==FALSE){ //verify form_validation.php 
 			$this->load->view('login_view');
 		} else{
 			$username = $this -> input -> post('username');
@@ -57,23 +54,9 @@ class Membership extends CI_Controller {
 	}
 	
 	public function signUp(){
-		$this->form_validation->set_rules('surname', 'lang:surname','trim|required');
-		$this->form_validation->set_rules('lastName', 'lang:lastName','trim|required');
-		$this->form_validation->set_rules('email', 'lang:email','trim|required|valid_email');
-		$this->form_validation->set_rules('emailConfirmation', 'lang:emailConfirmation','trim|required|valid_email');
-		$this->form_validation->set_rules('username', 'lang:username','trim|required');
-		$this->form_validation->set_rules('password', 'lang:password','trim|required');
-		$this->form_validation->set_rules('passwordConfirmation', 'lang:passwordConfirmation','trim|required');
 		
-		if($this->form_validation->run()==FALSE){
-			$data = array(
-				'surname'=> $this -> input -> post('surname'),
-				'lastname'=>$this -> input -> post('lastName'),
-				'email'=>$this -> input -> post('email'),
-				'emailConfirmation'=>$this -> input -> post('emailConfirmation'),
-				'username'=>$this -> input -> post('username')
-			);
-			$this->load->view('registration_view', $data);
+		if($this->form_validation->run('registration')==FALSE){
+			$this->load->view('registration_view');
 		} else{
 			$person = array(
 				'surname'=> $this -> input -> post('surname'),
@@ -95,7 +78,7 @@ class Membership extends CI_Controller {
 					$this -> input -> post('username').
 					$this -> input -> post('email').date("Y-m-d G:i:s").'09051974' );
 				$this->activation->create($id_user, $key);
-				$this->sendActivationMail($person['email'], $key);
+				//$this->sendActivationMail($person['email'], $key);
 			$this->db->trans_complete(); 
 			
 			redirect('welcome', 'refresh');
@@ -112,10 +95,10 @@ class Membership extends CI_Controller {
 	public function sendActivationMail($email, $key){
 		$this->load->library('email');
 
-		$this->email->from('nao-responda@ninkasi.com', 'Your Name');
+		$this->email->from($this->config->item('activation_email'), $this->config->item('activation_name'));
 		$this->email->to($email); 
 		
-		$this->email->subject('Ativação pendente');
+		$this->email->subject($this->config->item('activation_subject'));
 		$this->email->message('Bem vindo. ative sua conta clicando no link abaixo: http:\\\\localhost\\beer\\registration\\confirm\\'.$key);	
 		
 		$this->email->send();
@@ -123,5 +106,12 @@ class Membership extends CI_Controller {
 		echo $this->email->print_debugger();
 	}
 
-	
+	public function send(){
+		$email = $this -> input -> post('email');
+		$key = $this -> input -> post('key');
+		echo $this->config->item('activation_email').'<br>';
+		echo $this->config->item('activation_subject').'<br>';
+		echo $this->config->item('activation_name').'<br>';
+		//$this->sendActivationMail($email, $key);	
+	}
 }

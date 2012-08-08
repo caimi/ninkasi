@@ -10,7 +10,7 @@ class Registration extends CI_Controller {
 			'emailConfirmation'=>'',
 			'username'=>''
 		);
-		$this->load->view('registration_view', $data);
+		$this->load->view('registration_view');
 	}
 	
 	
