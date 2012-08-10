@@ -8,7 +8,7 @@ class Welcome extends CI_Controller {
 			$this->load->view('login_view');
 			redirect('login','refresh');
 		}
-		$this->load->view('welcome_message');
+		$this->template->load('ninkasi', 'welcome_message');
 	}
 }
 

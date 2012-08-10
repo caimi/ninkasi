@@ -1,38 +1,76 @@
-body{
-	margin:0;
-}
-#main-wrapper{
+body{ margin:0; background-color: #f1f1f1; }
+#main-wrapper{ }
 
-}
+#header{ background-color: #252525; height: 85px; padding: 5px; }
+#content { display: table; width: 100%}
+#logo{ font-family: helvetica; font-size: 62px; color: #999999; }
 
-#header{
-	background-color: #252525;
-	height: 85px;
-	padding: 5px;
-}
-#logo{
-	font-family: helvetica;
-	font-size: 62px;
-	color: #999999;
-}
+#wrap_login { font-family: tahoma; font-size: 12px; color: #666666; width: 250px; height:300px; margin: auto; }
+#wrap_login input[type="text"], #wrap_login input[type="password"]  { 
+	border: none; width: 200px; height: 27px; background-position: 185px 7px; background-color: #f1f1f1; box-shadow:#EBEBEB 0 0 0 2px;
+	color: #999999; background-color:#FBFBFB; background-image:url('http://themes.kopyov.com/aquincum/images/icons/loginEmail.png'); background-repeat:no-repeat no-repeat; 
+	padding-right: 20px; padding-left: 15px;}
+#wrap_login input[type="password"] { background-color:#FBFBFB; background-image:url('http://themes.kopyov.com/aquincum/images/icons/loginLock.png'); background-repeat:no-repeat no-repeat;}
+#wrap_login input{margin: 10px;}
+#wrap_login div.error{ color: #FF0000; }
+#wrap_login div.body{ margin:auto; margin-top:50px; }
+#wrap_login label {font-family: "tahoma"; font-size: 12px; }
+.loginPassword { background-color:#FBFBFB; background-image:url('http://themes.kopyov.com/aquincum/images/icons/loginLock.png'); background-repeat:no-repeat no-repeat; }
 
-#wrap_login {
-	background-color: #f1f1f1;
-	font-family: tahoma;
-	font-size: 12px;
-	color: #666666;
-	width: 450px;
-	height:300px;
-	margin: auto;
+#sidebar{ width: 327px; background-color: #d1d1d1; height: 100%; float: left; display: table}
+#mainbar{ width: 100px; background-color: #424242; height: 100%; float: left}
+#mainbar ul {
+  margin: 0;
+  border-bottom-color:#555555;
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  border-top-color:#2E2E2E;
+  border-top-style:solid;
+  border-top-width:1px;
+  margin-top:10px;
+  text-align:center;
+  list-style:none;
+  margin:0;
+  padding:0;}
+  
+#mainbar li a{
+  /*background-image:-webkit-linear-gradient(top, rgba(86, 86, 86, 0.199219) 0%, rgba(54, 54, 54, 0.199219) 100%);*/
+  background-position:initial initial;
+  background-repeat:initial initial;
+  color:#2E2E2E;
+  display:block;
+  font-size:11px;
+  padding:14px 0 8px;
+  width:100px;
+  filter: alpha(opacity=50); -webkit-transition: opacity 0.3s ease-in-out; -moz-transition: opacity 0.3s ease-in-out; transition: opacity 0.3s ease-in-out;
+}
+#mainbar li a:hover{color: #f4f4f4; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 	
+#mainbar li {
+  border-bottom-color:#2E2E2E;
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  border-top-color:#555555;
+  border-top-style:solid;
+  border-top-width:1px;
+  position:relative;
+  height: 64px;
 }
-#wrap_login input[type="text"], #wrap_login input[type="password"]  {
-	border: none;
-	width: 100px;
-	background-color: #a1a1a1;
-	color: #333333;
+#mainbar li span{
+	color: #c1c1c1;
+	font-family: 'Capriola';
+	font-size: 12px;
+	padding: 5px;
+	text-shadow:#303030 0 1px 0;
 }
 
-#wrap_login div.error{
-	color: #FF0000;
-}
+#secBar{ width: 225px; background-color: #d1d1d1; height: 100%; float: left;
+	border: 1px solid #aaaaaa;
+  margin-top:10px;
+  text-align:center;
+  list-style:none;
+  margin:0;
+  padding:0;}
+
+#content {width: 100%}
+#footer{ background-color: #252525; display: block}

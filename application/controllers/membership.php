@@ -33,7 +33,7 @@ class Membership extends CI_Controller {
 	public function authenticate()
 	{
 		if($this->form_validation->run('login')==FALSE){ //verify form_validation.php 
-			$this->load->view('login_view');
+			$this->template->load('ninkasi', 'login_view');
 		} else{
 			$username = $this -> input -> post('username');
 			$password = $this -> input -> post('password');
@@ -45,10 +45,8 @@ class Membership extends CI_Controller {
 				}
 			}else{
 				$this->form_validation->set_message('verify_login', lang('verify_login'));
-				$data = array(
-					'username'=>$username
-				);
-				$this->load->view('login_view', $data);
+				$this->template->load('ninkasi', 'login_view');
+				//$this->load->view('login_view', $data);
 			};
 		}
 	}
@@ -56,7 +54,7 @@ class Membership extends CI_Controller {
 	public function signUp(){
 		
 		if($this->form_validation->run('registration')==FALSE){
-			$this->load->view('registration_view');
+			$this->template->load('ninkasi', 'registration_view');
 		} else{
 			$person = array(
 				'surname'=> $this -> input -> post('surname'),
