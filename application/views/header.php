@@ -1,1 +1,1 @@
-<img src="<?php echo base_url();?>includes/logo.png"><span id="logo">Ninkasi</span>
+<img src="<?php echo base_url();?>includes/logo-nome.png"><span id="logo"></span>
