@@ -1,8 +1,30 @@
+body{
+	margin:0;
+}
+#main-wrapper{
+
+}
+
+#header{
+	background-color: #252525;
+	height: 85px;
+	padding: 5px;
+}
+#logo{
+	font-family: helvetica;
+	font-size: 62px;
+	color: #999999;
+}
+
 #wrap_login {
 	background-color: #f1f1f1;
 	font-family: tahoma;
 	font-size: 12px;
 	color: #666666;
+	width: 450px;
+	height:300px;
+	margin: auto;
+	
 }
 #wrap_login input[type="text"], #wrap_login input[type="password"]  {
 	border: none;

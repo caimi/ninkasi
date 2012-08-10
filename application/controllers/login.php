@@ -10,6 +10,7 @@ class Login extends CI_Controller {
 	public function index()
 	{
 		$this->lang->load('label'); 
-		$this->load->view('login_view');
+		//$this->load->view('login_view');
+		$this->template->load('ninkasi', 'login_view');
 	}
 }
