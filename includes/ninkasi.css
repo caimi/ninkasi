@@ -18,7 +18,7 @@ body{ margin:0; background-color: #f1f1f1; }
 .loginPassword { background-color:#FBFBFB; background-image:url('http://themes.kopyov.com/aquincum/images/icons/loginLock.png'); background-repeat:no-repeat no-repeat; }
 
 #sidebar{ width: 327px; background-color: #d1d1d1; height: 100%; float: left; display: table}
-#mainbar{ width: 100px; background-color: #424242; height: 100%; float: left}
+#mainbar{ width: 100px; background-color: #a62F00; height: 100%; float: left; } /*#FF8500*/
 #mainbar ul {
   margin: 0;
   border-bottom-color:#555555;
@@ -47,17 +47,17 @@ body{ margin:0; background-color: #f1f1f1; }
 #mainbar li a:hover{color: #f4f4f4; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 	
 #mainbar li {
-  border-bottom-color:#2E2E2E;
+  border-bottom-color:#3d1000;
   border-bottom-style:solid;
   border-bottom-width:1px;
-  border-top-color:#555555;
+  border-top-color:#ff622d;
   border-top-style:solid;
   border-top-width:1px;
   position:relative;
   height: 64px;
 }
 #mainbar li span{
-	color: #c1c1c1;
+	color: #fafafa /*A63800*/;
 	font-family: 'Capriola';
 	font-size: 12px;
 	padding: 5px;
@@ -72,5 +72,73 @@ body{ margin:0; background-color: #f1f1f1; }
   margin:0;
   padding:0;}
 
-#content {width: 100%}
 #footer{ background-color: #252525; display: block}
+#main{ float: left; border-top: 1px solid #999999;}
+
+ul.button, ul.tabbed { 
+	list-style:none;
+  	margin:0;
+  	padding:0;}
+  
+ul{	font-family: 'Capriola';
+	font-size: 12px;
+	text-align: left;
+}
+
+ul.tabbed{
+	width: 30px;
+}
+ul.tabbed li{ display: block;}
+ul.button li a{
+	background-image:-webkit-linear-gradient(top, #F7F7F7 0%, #E6E6E6 100%);
+	background-position:initial initial;
+	background-repeat:initial initial;
+	border-bottom-color:#CECECE;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-top-color:#FDFDFD;
+	border-top-style:solid;
+	border-top-width:1px;
+	color:#6A6A6A;
+	display:block;
+	padding:8px 14px;
+	text-decoration: none;
+}
+ul.button li a:hover{ 	color:#ff622d;}
+
+ul.button.ativo {
+  border-left-color:#ff622d;
+  border-left-style:solid;
+  border-left-width:4px;
+}
+
+.icon-receita{
+	background: url('css/main-theme/images/ui-icons_3d3d3d_256x240.png') 48px 48px ;
+	background-position:initial initial;
+  	background-repeat:initial initial; 
+	width:16px;
+	height:16px;
+	padding-left:0px;
+	margin:0;
+	display: block;
+}
+.icon-pessoa{
+	background: url('css/main-theme/images/ui-icons_3d3d3d_256x240.png') 80px 48px ;
+	background-position:initial initial;
+  	background-repeat:initial initial; 
+	width:16px;
+	height:16px;
+	padding-left:0px;
+	margin:0;
+	display: block;
+}
+.icon-filtro{
+	background: url('css/main-theme/images/ui-icons_3d3d3d_256x240.png') 96px 48px ;
+	background-position:initial initial;
+  	background-repeat:initial initial; 
+	width:16px;
+	height:16px;
+	padding-left:0px;
+	margin:0;
+	display: block;
+}
