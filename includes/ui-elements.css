@@ -1,0 +1,149 @@
+body{background-color: #e7e7e7; margin: 0}
+#header{margin-bottom: 0px; background-color: #333333; height: 90px;}
+#footer{ clear: both; background-color: #333333}
+#main-bar{width: 100px; float:left}
+#sec-bar{width: 225px; float: left; border: 1px solid #c1c1c1; }
+#tab1{ height: 250px; width:225px; display: table; }
+/*****************************************************************************************/
+
+.menu{ border-bottom:1px solid #555555; list-style:none; margin:0; padding: 0; opacity: 0,5;color: white;  }
+.menu li{ border-bottom:1px solid #222222; border-top: 1px solid #777777; height: 64px; background-color: #555555; text-align: center}
+.menu li:hover {background-color: #d5a334; color: #333333}
+.menu li a {display: block; text-decoration: none; color: #ffffff; text-shadow: 0 1px 1px #000000}
+.menu li a.ativo{  background-color: #800000; }
+.menu li a span:first-child { display:block; margin-left: 34px; margin-top: 10px}
+.menu li span{ margin-top: 0px; display: block}
+
+div.tab ul { list-style:none; margin:0; padding: 0; height: 32px;}
+div.tab ul li      { border-bottom:1px solid #999999; height: 32px; width:75px; background-color: #f1f1f1; text-align: center; float:left}
+div.tab ul li a    { display: block;}
+div.tab ul li.ativo{ border-bottom:1px solid #dddddd; width:75px; background-color: #e7e7e7;}
+
+.wrap {padding: 10px;}
+.teste{border-right: 1px solid #c1c1c1; border-left: 1px solid #999999; border-right: 1px solid #c1c1c1; }
+
+.ui-button { border: 1px solid #303030; border-radius: 3px; padding: 2px 15px; color: #381F00; background-color: #ffd000; box-shadow: 0 -1px 7px 0 #ff7800 inset; text-decoration: none; display:inline-block; margin: 5px;}
+/*.ui-button {border: 1px solid #303030; border-radius: 2px; padding: 2px 10px; background-color: #e7e7e7	; text-decoration: none; color:#ffffff; box-shadow:#a1a1a1 0 1px 2px 0 inset; }*/
+a.ui-button span{vertical-align: bottom; height: 27px; width: 25px}
+.ui-fnt {font-family: Capriola; font-size: 0.7em}
+.ui-fnt-big {font-family: Capriola; font-size: 1em}
+
+.ui-img-perfil   { background: url('ui-perfil.png'); height: 21px; width: 32px; display: inline-block;}
+
+.ui-img-1w { background: url('ui-icons.png') 0 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-2w { background: url('ui-icons.png') -32px 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-3w { background: url('ui-icons.png') -64px 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-4w { background: url('ui-icons.png') -96px 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-5w { background: url('ui-icons.png') -128px 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-6w { background: url('ui-icons.png') -160px 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-7w { background: url('ui-icons.png') -192px 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-8w { background: url('ui-icons.png') -224px 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-9w { background: url('ui-icons.png') -256px 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-0w { background: url('ui-icons.png') -288px 0; height: 32px; width: 32px; display: inline-block; }
+
+.ui-img-1b { background: url('ui-icons.png') 0 -32px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-2b { background: url('ui-icons.png') -32px -32px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-3b { background: url('ui-icons.png') -64px -32px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-4b { background: url('ui-icons.png') -96px -32px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-5b { background: url('ui-icons.png') -128px -32px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-6b { background: url('ui-icons.png') -160px -32px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-7b { background: url('ui-icons.png') -192px -32px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-8b { background: url('ui-icons.png') -224px -32px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-9b { background: url('ui-icons.png') -256px -32px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-0b { background: url('ui-icons.png') -288px -32px; height: 32px; width: 32px; display: inline-block; }
+
+.ui-img-checkb { background: url('ui-icons.png') 0 -64px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-checkw { background: url('ui-icons.png') -32px -64px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-crossb { background: url('ui-icons.png') -64px -64px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-crossw { background: url('ui-icons.png') -96px -64px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-plusb { background: url('ui-icons.png') -128px -64px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-plusw { background: url('ui-icons.png') -160px -64px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-minusb { background: url('ui-icons.png') -192px -64px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-minusw { background: url('ui-icons.png') -224px -64px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-exclamationb { background: url('ui-icons.png') -256px  -64px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-exclamationw { background: url('ui-icons.png') -288px -64px; height: 32px; width: 32px; display: inline-block; }
+
+.ui-img-gear1 { background: url('ui-icons.png') 0 -96px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-gear2 { background: url('ui-icons.png') -32px -96px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-gear3 { background: url('ui-icons.png') -64px -96px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-tag1 { background: url('ui-icons.png') -96px -96px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-tag2 { background: url('ui-icons.png') -128px -96px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-link1 { background: url('ui-icons.png') -160px -96px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-link2 { background: url('ui-icons.png') -192px -96px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-picture1 { background: url('ui-icons.png') -224px -96px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-picture2 { background: url('ui-icons.png') -256px -96px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-picture3 { background: url('ui-icons.png') -288px -96px; height: 32px; width: 32px; display: inline-block; }
+
+.ui-img-timer1 { background: url('ui-icons.png') 0 -128px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-timer2 { background: url('ui-icons.png') -32px -128px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-timer3 { background: url('ui-icons.png') -64px -128px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-checkmark { background: url('ui-icons.png') -96px -128px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-crossmark { background: url('ui-icons.png') -128px -128px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-graph1 { background: url('ui-icons.png') -160px -128px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-graph2 { background: url('ui-icons.png') -192px -128px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-graph3 { background: url('ui-icons.png') -224px -128px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-graph4 { background: url('ui-icons.png') -256px -128px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-graphpizza { background: url('ui-icons.png') -288px -128px; height: 32px; width: 32px; display: inline-block; }
+
+.ui-img-netb { background: url('ui-icons.png') 0 -160px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-netw { background: url('ui-icons.png') -32px -160px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-cloud { background: url('ui-icons.png') -64px -160px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-cloudin { background: url('ui-icons.png') -96px -160px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-cloudout { background: url('ui-icons.png') -128px -160px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-trash { background: url('ui-icons.png') -160px -160px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-calendar1 { background: url('ui-icons.png') -192px -160px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-calendar2 { background: url('ui-icons.png') -224px -160px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-calendar3 { background: url('ui-icons.png') -256px -160px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-calculator { background: url('ui-icons.png') -288px -160px; height: 32px; width: 32px; display: inline-block; }
+
+.ui-img-thermometer { background: url('ui-icons.png') 0 -192px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-zoom { background: url('ui-icons.png') -32px -192px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-zoomin { background: url('ui-icons.png') -64px -192px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-zoomout { background: url('ui-icons.png') -96px -192px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-compact { background: url('ui-icons.png') -128px -192px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-cozy { background: url('ui-icons.png') -160px -192px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-line { background: url('ui-icons.png') -192px -192px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-itens { background: url('ui-icons.png') -224px -192px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-tools { background: url('ui-icons.png') -256px -192px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-in { background: url('ui-icons.png') -288px -192px; height: 32px; width: 32px; display: inline-block; }
+
+.ui-img-locked { background: url('ui-icons.png') 0 -224px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-unlocked { background: url('ui-icons.png') -32px -224px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-email { background: url('ui-icons.png') -64px -224px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-expand { background: url('ui-icons.png') -96px -224px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-collapse { background: url('ui-icons.png') -128px -224px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-maximaze { background: url('ui-icons.png') -160px -224px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-minimaze { background: url('ui-icons.png') -192px -224px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-like { background: url('ui-icons.png') -224px -224px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-likeplus { background: url('ui-icons.png') -256px -224px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-likeminus { background: url('ui-icons.png') -288px -224px; height: 32px; width: 32px; display: inline-block; }
+
+.ui-img-message { background: url('ui-icons.png') 0 -256px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-hourglass { background: url('ui-icons.png') -32px -256px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-graph5 { background: url('ui-icons.png') -64px -256px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-graph6 { background: url('ui-icons.png') -96px -256px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-chemistry { background: url('ui-icons.png') -128px -256px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-adjusts { background: url('ui-icons.png') -160px -256px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-beer { background: url('ui-icons.png') -192px -256px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-bottle { background: url('ui-icons.png') -224px -256px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-person { background: url('ui-icons.png') -256px -256px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-blanck { background: url('ui-icons.png') -288px -256px; height: 32px; width: 32px; display: inline-block; }
+
+.ui-img-map { background: url('ui-icons.png') 0 -288px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-favoriteb { background: url('ui-icons.png') -32px -288px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-favoritew { background: url('ui-icons.png') -64px -288px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-document { background: url('ui-icons.png') -96px -288px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-documents { background: url('ui-icons.png') -128px -288px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-windowsb { background: url('ui-icons.png') -160px -288px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-windowsw { background: url('ui-icons.png') -192px -288px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-blanck1 { background: url('ui-icons.png') -224px -288px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-blanck2 { background: url('ui-icons.png') -256px -288px; height: 32px; width: 32px; display: inline-block; }
+.ui-img-blanck3 { background: url('ui-icons.png') -288px -288px; height: 32px; width: 32px; display: inline-block; }
+
+.ui-img-profile { background: url('ui-icons2.png') 0 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-recipe { background: url('ui-icons2.png') -32px 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-ingredients { background: url('ui-icons2.png') -64px 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-styles { background: url('ui-icons2.png') -96px 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-instruments { background: url('ui-icons2.png') -128px 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-convertions { background: url('ui-icons2.png') -160px 0; height: 32px; width: 32px; display: inline-block; }
+.ui-img-messages { background: url('ui-icons2.png') -192px -32px; height: 32px; width: 32px; display: inline-block; }

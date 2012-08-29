@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Perfil extends CI_Controller {
 
 	public function index()
 	{
@@ -8,10 +8,7 @@ class Welcome extends CI_Controller {
 			$this->load->view('login_view');
 			redirect('login','refresh');
 		}
-		$this->template->load('ninkasi', 'welcome_message');
+		$this->template->load('ninkasi', 'perfil_view');
 	}
-
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
