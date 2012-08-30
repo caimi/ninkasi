@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<!-- 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>includes/ninkasi.css" /> -->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>includes/ninkasi.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>includes/ui-elements.css" />
 	<link href='http://fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
 <!-- 	<link type="text/css" href="<?php echo base_url();?>includes/css/main-theme/jquery-ui-1.8.22.custom.css" rel="stylesheet" /> -->

@@ -1,25 +1,28 @@
-body{ margin:0}
-#main-wrap{}
-#header {background-color: #252525; height: 85px; }
-#mainBar{background-color: #a52f00; width: 100px; float:left; }
-#secBar {background-color: #a1a1a1; width: 225px; float:left;}
-#main{background-color: #ff1122; margin-left:325px; padding: 10px; }
-#footer {background-color: #D5A334; height: 275px; clear:both}
+body{background-color: #e7e7e7; margin: 0}
+#header{margin-bottom: 0px; background-color: #333333; height: 90px;}
+#footer{ clear: both; background-color: #333333}
+#main-bar{width: 100px; float:left}
+#sec-bar{width: 225px; float: left; border: 1px solid #c1c1c1; }
+#tab1{ height: 250px; width:225px; display: table; }
 
+/*****************************************************************************************/
+
+.main-body{padding:10px; float: left; display: inline-block; width: 850px}
+.publicidade{float: right; min-height: 600px;}
+.pages { border: 1px solid #a1a1a1; border-radius: 2px; background-color: #eaeaea}
 
 /***********************************************************************/
 /* MENU
  ***********************************************************************/
-div.user { border-top:1px solid #ff5e00; border-bottom:1px solid #632003; padding: 16px 0 16px 0; position:relative; text-align:center; width:100%; }
+/*div.user { border-top:1px solid #ff5e00; border-bottom:1px solid #632003; padding: 16px 0 16px 0; position:relative; text-align:center; width:100%; }
 div.user img {border: 2px solid #632003; border-radius: 4px;}
 div.user > span {font-family: Capriola; font-size: 12px; color: #f1f1f1; margin-top: 10px; display: block;}
 div.user a { display:inline-block; position:relative; text-decoration: none;}
 div.user a > span{ border-bottom-left-radius:2px; display:block; padding:0 2px 2px; position:absolute; right:0px; text-align:center; top:2px; }
 div.user a > span strong{ background-image:-webkit-linear-gradient(top, #d5a334 0%, #C35A32 100%); 
 					   background: -moz-linear-gradient(center top , #d5a334 0%, #C35A32 100%) repeat scroll 0 0 transparent;
-	                   border-radius: 2px; color:white; display:block; font-size:11px; font-weight:bold; height:16px; line-height:17px; padding:0 5px; white-space:nowrap;}
-
-ul.menu{ list-style: none; display: block;text-align: center; margin: 0px; padding: 0}
+	                   border-radius: 2px; color:white; display:block; font-size:11px; font-weight:bold; height:16px; line-height:17px; padding:0 5px; white-space:nowrap;}*/
+/*ul.menu{ list-style: none; display: block;text-align: center; margin: 0px; padding: 0}
 ul.menu li{display: block; height: 44px; border-top:1px solid #ff5e00; border-bottom:1px solid #632003; padding: 10px;}
 ul.menu li a{ text-decoration: none;}
-ul.menu li span{display: block; font-family: Capriola; font-size: 12px; color: #f1f1f1; text-shadow:#303030 -1px -1px 0;padding-top: 5px;}
+ul.menu li span{display: block; font-family: Capriola; font-size: 12px; color: #f1f1f1; text-shadow:#303030 -1px -1px 0;padding-top: 5px;}*/
