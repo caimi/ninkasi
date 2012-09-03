@@ -35,19 +35,19 @@
 	</div>
 </div>
 
-<div style="background-color: #e7e7e7; margin-left: 325px;">
-	<div style="background-color: #e7e7e7; height: 64px; border: 1px solid #a1a1a1">
-		<span style="display: inline-block; padding: 5px; color: #843121; margin: 15px;" class="ui-fnt-big">Perfil</span>
-		<div style="float: right; height: 64px; width: 96px;padding-top: 16px; text-align: center"><a href="#">12</a><br>receitas</div>
-		<div style="float: right; height: 64px; width: 96px;padding-top: 16px; text-align: center"><a href="#">4</a><br>mensagens</div>
-		<div style="float: right; height: 64px; width: 96px;padding-top: 16px; text-align: center"><a href="#">10</a><br>visitas</div>
+<div id="main-body">
+	<div class="title-bar">
+		<span class="page-title ui-fnt-big">Perfil</span>
+		<div class="top-statistics ui-fnt-big"><a href="#" class="big-link ui-fnt-big">12</a><br>receitas</div>
+		<div class="top-statistics ui-fnt-big"><a href="#" class="big-link ui-fnt-big">4</a><br>mensagens</div>
+		<div class="top-statistics ui-fnt-big"><a href="#" class="big-link ui-fnt-big">10</a><br>visitas</div>
 	</div>
-	<div style="height: 32px; border-bottom: 1px solid #a1a1a1; ">
-		<div style="padding-left: 10px; font-size: .7em; font-family: Helvetica; color: #666666; padding-top: 7px;">perfil > configurações
+	<div class="toolbar">
+		<div class="path">perfil > configurações
 		</div>
 	</div>
-	<div style="display:table;">
-		<div class="main-body">
+	<div>
+		<div class="main-container">
 			<div id="page1" class="pages">
 				<div class="error"><?php echo validation_errors(); ?></div>
 				<?php echo form_open(''); ?>
@@ -129,5 +129,5 @@
 		</div>	
 	</div>
 </div>
-		<div style="height: 400px; clear: both"></div>
+<div style="height: 400px; clear: both"></div>
 

@@ -9,7 +9,7 @@
 div.tab ul { list-style:none; margin:0; padding: 0; height: 32px;}
 div.tab ul li      { border-bottom:1px solid #999999; height: 32px; width:75px; background-color: #f1f1f1; text-align: center; float:left}
 div.tab ul li a    { display: block;}
-div.tab ul li.ativo{ border-bottom:1px solid #dddddd; width:75px; background-color: #e7e7e7;}
+div.tab ul li.ativo{ border-bottom:1px solid #dddddd; width:75px; background-color: #e7e7e7; border-bottom:1px solid #f1f1f1;}
 div.tab ul li:hover {background-color: #ffffff}
 
 div.button {  display: table}
@@ -34,15 +34,13 @@ div.group-label { color: #843121; padding: 15px; font-family: capriola; font-siz
 div.form-button { margin: 5px; }
 
 .wrap {padding: 10px;}
-.teste{border-right: 1px solid #c1c1c1; border-left: 1px solid #999999; border-right: 1px solid #c1c1c1; }
+/*.teste{border-right: 1px solid #c1c1c1; border-left: 1px solid #999999; border-right: 1px solid #c1c1c1; }*/
 
 .ui-link-button { border: 1px solid #303030; border-radius: 3px; padding: 5px 10px; color: #381F00; background-color: #ffd000; box-shadow: 0 -1px 7px 0 #ff7800 inset; text-decoration: none; display:inline-block; margin: 5px; }
 .ui-link-button:hover{ box-shadow: 0 -0px 15px 0 #ffffff inset; background-color: #ffd000}
-a.ui-button span{vertical-align: bottom; height: 27px; width: 25px}
+/*a.ui-button span{vertical-align: bottom; height: 27px; width: 25px}*/
 .ui-fnt {font-family: Capriola; font-size: 0.7em}
 .ui-fnt-big {font-family: Capriola; font-size: 1em}
-
-.ui-img-perfil   { background: url('ui-perfil.png'); height: 21px; width: 32px; display: inline-block;}
 
 .ui-img-1w { background: url('ui-icons.png') 0 0; height: 32px; width: 32px; display: inline-block; }
 .ui-img-2w { background: url('ui-icons.png') -32px 0; height: 32px; width: 32px; display: inline-block; }

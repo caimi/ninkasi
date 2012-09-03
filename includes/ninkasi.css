@@ -4,11 +4,17 @@ body{background-color: #e7e7e7; margin: 0}
 #main-bar{width: 100px; float:left}
 #sec-bar{width: 225px; float: left; border: 1px solid #c1c1c1; }
 #tab1{ height: 250px; width:225px; display: table; }
+#main-body{ background-color: #e7e7e7; margin-left: 325px; }
 
-/*****************************************************************************************/
-
-.main-body{padding:10px; float: left; display: inline-block; width: 850px}
-.publicidade{float: right; min-height: 600px;}
+.title-bar{background-color: #e7e7e7; height: 64px; border: 1px solid #a1a1a1}
+.toolbar {height: 32px; border-bottom: 1px solid #a1a1a1;}
+.path{padding-left: 10px; font-size: .7em; font-family: Helvetica; color: #666666; padding-top: 7px;}
+.top-statistics {float: right; height: 64px; width: 96px; padding-top: 16px; text-align: center; color: #999999}
+.big-link {text-decoration: none; color: #843121; }
+.big-link:hover {text-decoration: underline; color: #D19405; }
+.page-title {display: inline-block; padding: 5px; color: #843121; margin: 15px; }
+.main-container{ padding:10px; float: left; display: inline-block; width: 850px}
+.publicidade{ float: right; min-height: 600px;}
 .pages { border: 1px solid #a1a1a1; border-radius: 2px; background-color: #eaeaea}
 
 /***********************************************************************/
