@@ -43,27 +43,27 @@
 		</div>
 		<div class="tab">
 			<ul>
-				<li><a href="#tab1"><span class="ui-img-bottle"></span></a></li>
-				<li><a href="#tab2"><span class="ui-img-like"></span></a></li>
-				<li><a href="#tab3"><span class="ui-img-favoriteb"></span></a></li>
+				<li><a onclick="show_item('tabs','#tab1')"><span class="ui-img-bottle"></span></a></li>
+				<li><a onclick="show_item('tabs','#tab2')"><span class="ui-img-like"></span></a></li>
+				<li><a onclick="show_item('tabs','#tab3')"><span class="ui-img-favoriteb"></span></a></li>
 			</ul>
 			<hr width="95%">
-			<div id="#tab1">
-				<div class="wrap">
-					aqui vai o detalhe 1<br>
-					<input type="button" name="enviar" value="enviar">
-				</div>
+		</div>
+		<div id="tab1" class="tabs">
+			<div class="wrap">
+				aqui vai o detalhe 1<br>
+				<input type="button" name="enviar" value="enviar">
 			</div>
-			<div id="#tab2">
-				<div class="wrap">
-					aqui vai o detalhe 2<br>
-					<a href="#" class="ui-fnt ui-button">enviar</a>
-				</div>
+		</div>
+		<div id="tab2" class="tabs">
+			<div class="wrap">
+				aqui vai o detalhe 2<br>
+				<a href="#" class="ui-fnt ui-button">enviar</a>
 			</div>
-			<div id="#tab3">
-				<div class="wrap">
-					aqui vai o detalhe 3
-				</div>
+		</div>
+		<div id="tab3" class="tabs">
+			<div class="wrap">
+				aqui vai o detalhe 3
 			</div>
 		</div>
 	</div>

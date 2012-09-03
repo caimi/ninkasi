@@ -9,22 +9,29 @@
 	<script type="text/javascript" src="<?php echo base_url();?>includes/js/jquery-ui-1.8.22.custom.min.js"></script>
 	<script>
 		$(document).ready(function() {
-			$('div.tab > div').hide();
-			var ativo = $('div.tab div:first');
-			ativo.show();
+			$('div.tabs').hide();
 			$('div.tab ul li:first').addClass('ativo');
-			$('a').click(function() {
+			$('div.tab ul li a').click(function() {
 			  $('div.tab ul li').removeClass('ativo');
 			  $(this).parent().addClass('ativo');
-			  var div = $(this).attr('href');
-			  $('div.tab > div').each(function(index){
-			  	$(this).hide();
-			  	if(div == $(this).attr('id')){
-			  		$(this).show();
-			  	}
-			  })
 			});
+			
+			$('div.button ul li:first').addClass('ativo');
+			$('div.button ul li a').click(function() {
+			  $('div.button ul li').removeClass('ativo');
+			  $(this).parent().addClass('ativo');
+			});
+			
+			$('div.pages').hide();
+			$('#page1').show();
+		 	$('div.tabs').hide();			$('#tab1').show();
 		});
+		
+		function show_item(clazz, id){
+			var group = 'div.' + clazz;
+			$(group).hide();
+			$(id).show();
+		}
 	</script>
 </head>	
 <body>

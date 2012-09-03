@@ -1,8 +1,8 @@
-.menu{ border-bottom:1px solid #555555; list-style:none; margin:0; padding: 0; opacity: 0,5;color: white;  }
+.menu{ border-bottom:1px solid #555555; list-style:none; margin:0; padding: 0; color: white;  }
 .menu li{ border-bottom:1px solid #222222; border-top: 1px solid #777777; height: 64px; background-color: #555555; text-align: center}
-.menu li:hover {background-color: #d5a334; color: #333333}
+.menu li:hover {background-color: #d5a334; color: #333333; }
 .menu li a {display: block; text-decoration: none; color: #ffffff; text-shadow: 0 1px 1px #000000}
-.menu li a.ativo{  background-color: #800000; }
+.menu li a.ativo{  background-color: #800000;}
 .menu li a span:first-child { display:block; margin-left: 34px; margin-top: 10px}
 .menu li span{ margin-top: 0px; display: block}
 
@@ -14,27 +14,30 @@ div.tab ul li:hover {background-color: #ffffff}
 
 div.button {  display: table}
 div.button ul { list-style:none; margin:0; padding: 0; height: 32px;}
-div.button ul li { height: 32px; width: 215px; display: block; background-color: #e7e7e7; border-top: 1px solid #999999; border-bottom: #f7f7f7; text-align: left; padding-left: 10px;box-shadow: #C1C1C1 0 0 5px 0 inset}/*box-shadow: #C1C1C1 0 0 5px 0 inset;*/
+div.button ul li { height: 32px; width: 215px; display: block; background-color: #e7e7e7; border-top: 1px solid #999999; border-bottom: #f7f7f7; text-align: left; padding-left: 10px;box-shadow: #d9d9d9 0 0 5px 0 inset}/*box-shadow: #C1C1C1 0 0 5px 0 inset;*/
 div.button ul li a { text-decoration: none; color: #333333; padding: 8px 0px}
+div.button ul li a span { display: block; padding-top: 8px;}
+div.button ul li.ativo {width: 215px; background-color: #ffffff }
 div.button ul li:hover{background-color: #f7f7f7}
 
 /* forms styles*/
 div.title{ border-bottom: 1px solid #999999; height: 64px; font-family: capriola; font-size: .9em; color: #333333;}
 div.title span { margin-left: 15px; margin-top: 20px; display: inline-block; color: #843121}
-div.pagerow{ border-top: 1px solid #f1f1f1; border-bottom: 1px solid #999999; height: 48px; font-family: capriola; font-size: .8em; }
-div.pagerow div.action-button{width: 48px; float: right; height: 48px; border-left: 1px solid #a1a1a1; }
-div.pagerow div.action-button span{ margin-top: 8px; margin-left: 8px }
+div.form-row{ border-top: 1px solid #f1f1f1; border-bottom: 1px solid #999999; height: 48px; font-family: capriola; font-size: .8em; }
+div.form-row div.action-button{width: 48px; float: right; height: 48px; border-left: 1px solid #a1a1a1; }
+div.form-row div.action-button span{ margin-top: 8px; margin-left: 8px }
 div.label{ float:left; width: 200px; color: #a1a1a1; font-size: .8em; font-family: Helvetica}
-div.label label{ margin: auto; display:inline-block; margin: 15px; color: #333333;font-size: 1.2em; font-family: capriola; }
-div.field input{ box-shadow: #a1a1a1 0 0 5px 0; border: none; width: 550px; height: 24px; margin-top: 12px;}
+div.label label{ margin: auto; display:inline-block; margin: 15px; color: #333333;font-size: 1.2em; font-family: capriola;}
+div.field input{ box-shadow: #a1a1a1 0 0 5px 0; border: none; width: 550px; height: 24px; margin-top: 12px; padding: 10px; }
 div.field span{ margin-top: 0px; display: inline-block;}
 div.group-label { color: #843121; padding: 15px; font-family: capriola; font-size: .9em; border-bottom: 1px solid #999999; border-top: 1px solid #f1f1f1; border-top: 1px solid #f1f1f1; background-color:#d7d7d7}
+div.form-button { margin: 5px; }
 
 .wrap {padding: 10px;}
 .teste{border-right: 1px solid #c1c1c1; border-left: 1px solid #999999; border-right: 1px solid #c1c1c1; }
 
-.ui-link-button { border: 1px solid #303030; border-radius: 3px; padding: 2px 15px; color: #381F00; background-color: #ffd000; box-shadow: 0 -1px 7px 0 #ff7800 inset; text-decoration: none; display:inline-block; margin: 5px;}
-/*.ui-button {border: 1px solid #303030; border-radius: 2px; padding: 2px 10px; background-color: #e7e7e7	; text-decoration: none; color:#ffffff; box-shadow:#a1a1a1 0 1px 2px 0 inset; }*/
+.ui-link-button { border: 1px solid #303030; border-radius: 3px; padding: 5px 10px; color: #381F00; background-color: #ffd000; box-shadow: 0 -1px 7px 0 #ff7800 inset; text-decoration: none; display:inline-block; margin: 5px; }
+.ui-link-button:hover{ box-shadow: 0 -0px 15px 0 #ffffff inset; background-color: #ffd000}
 a.ui-button span{vertical-align: bottom; height: 27px; width: 25px}
 .ui-fnt {font-family: Capriola; font-size: 0.7em}
 .ui-fnt-big {font-family: Capriola; font-size: 1em}
