@@ -68,7 +68,7 @@
 					</div>
 					<div class="form-row">
 						<div class="label"><label for="">cep</label>ex: 88888-888</div>
-						<div class="field"><input type="text"></div>
+						<div class="field2"><input type="text"></div>
 					</div>
 					<div class="form-row">
 						<div class="label"><label for="">rua</label></div>
@@ -80,7 +80,22 @@
 					</div>
 					<div class="form-row">
 						<div class="label"><label for="">estado</label></div>
-						<div class="field"><input type="text"></div>
+						<div class="select">
+							<div class="ui-img-select" style="float:right; position: relative"></div>
+							<select>
+								<optgroup label="Sul">
+									<option>PR</option>
+									<option>SC</option>
+									<option>RS</option>
+								</optgroup>
+								<optgroup label="Sudeste">
+									<option>ES</option>
+									<option>SP</option>
+									<option>MG</option>
+									<option>RJ</option>
+								</optgroup>
+							</select>
+						</div>
 					</div>
 					<div class="group-label">
 						Contatos
@@ -88,15 +103,15 @@
 					<div class="form-row">
 						<div class="action-button"><a href="#"><span class="ui-img-plusb"></span></a></div>
 						<div class="label"><label for="">residencial</label>ex: (41) 9999-9999</div>
-						<div class="field"><input type="text"></div>
+						<div class="field2"><input type="text"></div>
 					</div>
 					<div class="form-row">
 						<div class="label"><label for="">comercial</label>ex: (41) 9999-9999</div>
-						<div class="field"><input type="text"></div>
+						<div class="field2"><input type="text"></div>
 					</div>
 					<div class="form-row">
 						<div class="label"><label for="">celular</label>ex: (41) 9999-9999</div>
-						<div class="field"><input type="text"></div>
+						<div class="field2"><input type="text"></div>
 					</div>
 					<div class="form-row">
 						<div class="label"><label for="">email</label></div>
