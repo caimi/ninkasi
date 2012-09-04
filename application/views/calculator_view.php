@@ -31,7 +31,7 @@
 </div>
 <div style="background-color: #e7e7e7; margin-left: 325px;">
 	<div style="background-color: #e7e7e7; height: 64px; border: 1px solid #a1a1a1">
-		<span style="display: inline-block; padding: 5px; color: #FFAE00; margin: 15px;" class="ui-fnt-big">Instrumentos</span>
+		<span style="display: inline-block; padding: 5px; color: #FFAE00; margin: 15px;" class="ui-fnt-big">Calculadora</span>
 		<div style="float: right; height: 64px; width: 96px;padding-top: 16px; text-align: center"><a href="#">12</a><br>receitas</div>
 		<div style="float: right; height: 64px; width: 96px;padding-top: 16px; text-align: center"><a href="#">4</a><br>mensagens</div>
 		<div style="float: right; height: 64px; width: 96px;padding-top: 16px; text-align: center"><a href="#">10</a><br>visitas</div>

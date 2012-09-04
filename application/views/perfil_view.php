@@ -23,9 +23,11 @@
 		</div>
 	</div>
 	<div id="tab2" class="tabs">
-		<div class="wrap">
-			aqui vai o detalhe 2<br>
-			<a href="#" class="ui-link-button">enviar</a>
+		<div class="button ui-fnt">
+			<ul>
+				<li><a onclick="show_item('pages','#page10')"><span>comunicação</span></a></li>
+				<li><a onclick="show_item('pages','#page20')"><span>preferências</span></a></li>
+			</ul>
 		</div>
 	</div>
 	<div id="tab3" class="tabs">
@@ -58,6 +60,10 @@
 					</div>
 					<div class="form-row">
 						<div class="label"><label for="">sobrenome</label></div>
+						<div class="field"><input type="text"></div>
+					</div>
+					<div class="form-row">
+						<div class="label"><label for="">apelido</label></div>
 						<div class="field"><input type="text"></div>
 					</div>
 					<div class="form-row">
@@ -109,6 +115,8 @@
 				</form>
 			</div>
 			<div id="page2" class="pages">
+				<div class="error"><?php echo validation_errors(); ?></div>
+				<?php echo form_open(''); ?>
 				<div class="group-label"><span>Autenticação</span></div>
 				<div class="form-row">
 					<div class="label"><label for="">login</label></div>
@@ -122,6 +130,85 @@
 					<div class="label"><label for="">frase</label></div>
 					<div class="field"><input type="text"></div>
 				</div>
+				<div class="form-row">
+					<div class="form-button">
+						<a onclick="submit()" class="ui-link-button">enviar</a>
+						<a onclick="submit()" class="ui-link-button">cancelar</a>
+					</div>
+				</div>
+			</form>
+			</div>
+			<div id="page3" class="pages">
+				<div class="error"><?php echo validation_errors(); ?></div>
+				<?php echo form_open(''); ?>
+				<div class="group-label"><span>Social</span></div>
+				<div class="form-row">
+					<div class="label"><label for="">site</label></div>
+					<div class="field"><input type="text"></div>
+				</div>
+				<div class="form-row">
+					<div class="label"><label for="">facebook</label></div>
+					<div class="field"><input type="text"></div>
+				</div>
+				<div class="form-row">
+					<div class="label"><label for="">orkut</label></div>
+					<div class="field"><input type="text"></div>
+				</div>
+				<div class="form-row">
+					<div class="form-button">
+						<a onclick="submit()" class="ui-link-button">enviar</a>
+						<a onclick="submit()" class="ui-link-button">cancelar</a>
+					</div>
+				</div>
+			</form>
+			</div>
+			
+			
+			<div id="page10" class="pages">
+				<div class="error"><?php echo validation_errors(); ?></div>
+				<?php echo form_open(''); ?>
+				<div class="group-label"><span>Comunição</span></div>
+				<div class="form-row">
+					<div class="field">
+						<input type="checkbox"><label for="">Sim. Gostaria de receber informações de novas características, notificações de atualização e comunicações da Ninkasi. </label>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="field">
+						<input type="checkbox"><label for="">Sim. Gostaria de receber email com ofertas especiais de anunciantes relacionados a produção de cerveja.</label>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-button">
+						<a onclick="submit()" class="ui-link-button">enviar</a>
+						<a onclick="submit()" class="ui-link-button">cancelar</a>
+					</div>
+				</div>
+			</form>
+			</div>
+			<div id="page20" class="pages">
+				<div class="error"><?php echo validation_errors(); ?></div>
+				<?php echo form_open(''); ?>
+				<div class="group-label"><span>Preferências</span></div>
+				<div class="form-row">
+					<div class="form-row">
+						<div class="label"><label for="">unidade de medidas</label></div>
+						<div class="field"><input type="text"></div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-row">
+						<div class="label"><label for="">idioma</label></div>
+						<div class="field"><input type="text"></div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-button">
+						<a onclick="submit()" class="ui-link-button">enviar</a>
+						<a onclick="submit()" class="ui-link-button">cancelar</a>
+					</div>
+				</div>
+			</form>
 			</div>
 		</div>
 		<div class="publicidade">
