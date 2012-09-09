@@ -41,7 +41,7 @@ div.field input[type=checkbox]{ width: auto; height: auto; margin-top: 15px; mar
 div.field label{ margin: 5px; font-size: 0.8em; color: #333333} 
 div.field span{ margin-top: 0px; display: inline-block;}
 div.select{ box-shadow: #a1a1a1 0 0 5px 0; float: left; width: 256px; height: 24px; margin-top: 12px; margin-left: 32px; }
-div.select select { box-shadow: #a1a1a1 0 0 5px 0; width: 100px; opacity: 1; height: 24px; border: none; position: relative; top: -32px; overflow: hidden; background: url(ui-perfil.png) no-repeat right #ddd;}
+div.select select { box-shadow: #a1a1a1 0 0 5px 0; width: 256px; opacity: 1; height: 24px; border: none; position: relative; top: 0px; overflow: hidden;}
 div.group-label { color: #843121; padding: 15px; font-family: capriola; font-size: .9em; border-bottom: 1px solid #999999; border-top: 1px solid #f1f1f1; border-top: 1px solid #f1f1f1; background-color:#d7d7d7}
 div.form-button { margin: 5px; }
 

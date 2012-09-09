@@ -81,18 +81,39 @@
 					<div class="form-row">
 						<div class="label"><label for="">estado</label></div>
 						<div class="select">
-							<div class="ui-img-select" style="float:right; position: relative"></div>
+							<div style="float:right; position: relative"></div>
 							<select>
 								<optgroup label="Sul">
-									<option>PR</option>
-									<option>SC</option>
-									<option>RS</option>
+									<option value="PR">Paraná</option>
+									<option value="SC">Santa Catarina</option>
+									<option value="RS">Rio Grande do Sul</option>
 								</optgroup>
 								<optgroup label="Sudeste">
-									<option>ES</option>
-									<option>SP</option>
-									<option>MG</option>
-									<option>RJ</option>
+									<option value="ES">Espirito Santo</option>
+									<option value="SP">São Paulo</option>
+									<option value="MG">Minas Gerais</option>
+									<option value="RJ">Rio de Janeiro</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="label"><label for="">estado</label></div>
+						<div class="select">
+							<div style="float:right; position: relative"></div>
+							<select>
+								<optgroup label="Americas">
+									<option value="Brasil">Brasil</option>
+									<option value="Argentina">Argentina</option>
+									<option value="Uruguay">Uruguay</option>
+									<option value="Paraguay">Paraguay</option>
+									<option value="Chile">Chile</option>
+								</optgroup>
+								<optgroup label="Europa">
+									<option value="Inglaterra">Inglaterra</option>
+									<option value="França">França</option>
+									<option value="Belgica">Belgica</option>
+									<option value="Holanda">Holanda</option>
 								</optgroup>
 							</select>
 						</div>
